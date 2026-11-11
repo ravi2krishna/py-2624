@@ -1,0 +1,45 @@
+-> Indentation 
+
+-> Identifiers - Operators 
+
+-> Variables - Data types
+
+-> Control Structures (conditionals - loops - branching)
+
+-> Strings 
+
+-> Lists 
+
+-> Tuples 
+
+
+Class - 9
+==========
+
+    -> Dictionaries 
+
+        -> Dictionary is a data structure which allows you to store multiple "key values"
+        in a single variable, each value is separated with ,
+
+        -> Dictionaries are represented using { } or using "dict" class
+
+        -> Dictionaries Store Key Value Pairs 
+
+            -> key:value
+
+            -> {key1:value1,key2:value2,key3:value3}
+
+            -> https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSib6nLERnnqTxvDUQa5l1ykY9tHPi8c9mWOQV2nwnRl0vXzj01vhWtr-o&s=10
+
+        -> Dictionaries Allows Duplicates(*)
+
+            -> Values Can Be Duplicated 
+
+            -> Keys Should Be Unique, If we add duplicates, latest will override the old key 
+
+            -> Keys Should Be Immutable Object Only, Values Can Be Any Objects  
+
+
+
+
+
