@@ -41,5 +41,39 @@ Class - 9
 
 
 
+Class - 10
+==========
+
+    -> Dictionary Methods 
+
+    -> With Observations Made From Dictionary Methods We Can Say Dictionary Is Mutable 
 
 
+    -> Sets 
+
+        -> Set is a data structure which allows you to store multiple values
+        in a single variable, each value is separated with ,
+
+        -> Sets are represented using { } or using "set" class
+
+            -> {key1:value1,key2:value2,key3:value3} - Dictionary
+
+            -> {value1,value2,value3} - Set 
+
+        -> Sets Doesn't Support Indexing & Slicing 
+
+        -> NOTE: To Easily remember sets (UUU)
+
+            -> U - Unique Data 
+
+            -> U - Unordered Data 
+
+            -> U - Unindexed Data 
+
+        -> NOTE: With sets we can do Mathematical set operations (class X - XI)
+
+            -> https://i0.wp.com/mathematicalmysteries.org/wp-content/uploads/2023/08/e-math-set-notation-venn-diagram.jpg?fit=800%2C539&ssl=1
+
+        -> Sets Are Mutable In Nature 
+
+        
