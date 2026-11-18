@@ -95,3 +95,151 @@ Class - 11
         -> https://drive.google.com/file/d/1Yabj4nFUx_1g6eAw3EsEsopEWxivTK2Z/view?usp=sharing
 
         -> https://drive.google.com/file/d/1gpWYycwbeRWrmShF5Hc1V86KcIVYJCfE/view?usp=sharing
+
+
+Class - 12
+==========
+
+    -> NOTE: Build Ecommerce Product Inventory System 
+
+        -> Create Product (product id, product name, product description, product price, product quantity)
+        -> Update Product Price, Product Quantity
+        -> Delete Product 
+        -> Read Product 
+
+    
+        -> Ask User To Purchase Product, if product is available (i.e Product Quantity above 0)
+        let the user purchase it, then decrease Product Quantity by 1 
+
+        -> Get Report: List Of All Products 
+
+        -> Get Report: Total Products Value (3 products) 
+
+            -> p1 - price is 100 - available Quantity is 3 -> 300
+            -> p2 - price is 200 - available Quantity is 5 -> 1000
+            -> p3 - price is 100 - available Quantity is 5 -> 500
+
+            -> Total Products Value - 1800
+
+
+    -> Functional Programming 
+
+        -> In computer science, functional programming is a programming paradigm 
+        where programs are constructed by applying and composing "functions"
+
+
+    -> Functions
+
+        -> In Python, a function is a named, "reusable block of code" that performs 
+        a specific task, takes input (arguments), processes data, 
+        and can return an output.
+
+        -> Functions can break down complex problems into smaller and
+        simpler manageable sub tasks for promoting code modularity. 
+
+        -> Once defined a function, it can be "called multiple times", so that 
+        we can achieve code reusability.
+
+
+    -> Functions are defined using "def" keyword, followed by function name,
+    parenthesis(which may contain parameters), and a colon:
+    the code within the function is indented 
+
+        -> Syntax
+
+            def function_name():
+                statements
+
+            def function_name(parameters):
+                statements
+
+        -> NOTE: calling function is must
+
+            function_name()
+            function_name(parameters)
+
+    
+        -> Python functions can be defined to accept "parameters" 
+        which can act as placeholders for values that will be 
+        passed into function when called. 
+        
+            -> Values passed to the function we call them as "arguments"
+
+            -> We use parameters to make functions dynamic in nature
+
+
+    -> Based on arguments passed to a function, we got five Types
+
+        -> Positional Arguments
+
+        -> Keyword Arguments
+
+        -> Default Arguments
+
+        -> Arbitrary Positional Arguments
+
+        -> Arbitrary Keyword Arguments
+
+
+    -> Positional Arguments
+
+        -> In Python, positional arguments are values passed to a function during 
+        its call, where the assignment of these values to the function's parameters 
+        is determined solely by their "order" (position) in the argument list. 
+
+        -> The first argument in the function call is assigned to the first parameter 
+        in the function definition, the second to the second, and so on. 
+
+        -> Order Matters: If the order is incorrect, the function will receive the wrong values 
+        for its intended parameters, potentially leading to errors or unexpected behavior.
+
+
+    -> Keyword Arguments
+
+         -> In Python, keyword arguments are a way to pass values to a function by explicitly 
+        "naming the parameters" they correspond to, rather than relying on their position 
+        in the argument list. 
+
+        -> This offers advantages, primarily in terms of code readability and flexibility.
+
+
+    -> Default Arguments
+
+        -> In Python, default arguments allow you to define a function parameter 
+        with a "pre-assigned" value i.e default value 
+
+        -> If a caller does not provide an argument for that parameter during a function call, 
+        the default value is automatically used. 
+        If an argument is provided, it overrides the default.
+
+        -> Placement Requirement: Default arguments must always be placed after 
+        any non-default arguments in the function definition. 
+        Attempting to place a non-default argument after a 
+        default argument will result in a SyntaxError.
+
+
+    -> Arbitrary Positional Arguments
+
+        -> Arbitrary means unknown or random 
+
+        -> In Python, arbitrary positional arguments allow a function to accept 
+        a unknown number of Positional arguments. 
+        This is achieved by placing an asterisk (*) before a parameter name 
+        in the function definition. 
+
+        -> This parameter will then collect all the positional arguments 
+        passed to the function into a tuple. 
+
+    
+    -> Arbitrary Keyword Arguments
+
+        -> Arbitrary means unknown or random 
+
+        -> In Python, arbitrary keyword arguments allow a function to accept 
+        a unknown number of Keyword arguments. 
+        This is achieved by placing an asterisk (**) before a parameter name 
+        in the function definition. 
+
+        -> This parameter will then collect all the Keyword arguments 
+        passed to the function into a Dictionary, 
+        where names will be keys and value is value 
