@@ -214,3 +214,189 @@ print("=" * 50)
 
 profile(fname="John",lname="Doe",mobile=909080800)    
 print("=" * 50)
+
+# Without return 
+def add(a,b):
+    a + b 
+
+add(10,5)
+print(add(10,5))
+print("=" * 50)
+
+# # Problem 
+# def add(a,b):
+#     print(a+b)
+    
+# # Function Composition
+# def sub(c,d,e): # add c and d then minus e --> c + d - e (None - 5)
+#     print(add(c,d) - e) # TypeError: unsupported operand type(s) for -: 'NoneType' and 'int' --> 
+
+# sub(3,4,5) # 3 + 4 - 5 = 2
+    
+# print("=" * 50)
+
+# Solution
+def add(a,b):
+    return a + b 
+
+# Function Composition
+def sub(c,d,e): # add c and d then minus e --> c + d - e 
+    print(add(c,d) - e)
+    
+sub(3,4,5) # 3 + 4 - 5 = 2
+
+print("=" * 50)
+
+# return, make sure it's the last part of statement to be executed
+def add(a,b):
+    print("Calculation Started......")
+    return a + b 
+    print("Calculation Completed......") # Code is structurally unreachable
+
+print(add(10,10))
+
+print("=" * 50)
+
+a = 50
+a = 60
+a = 70
+print(a) # 70 
+
+print("=" * 50)
+     
+# If you have multiple return statements, first return will be considered
+def math_ops(a,b):
+    return a + b 
+    return a * b # Code is structurally unreachable
+    return a / b # Code is structurally unreachable
+
+print(math_ops(2,3))
+
+print("=" * 50)
+
+# multiple returns are present, and used with conditionals, you can control the flow 
+def math_ops(a,b,operator):
+    if operator == "+":
+        return a + b 
+    elif operator == "*":
+        return a * b 
+    elif operator == "/":
+        return a / b
+    else:
+        return "Invalid Operator"
+    
+print(math_ops(20,5,"+"))
+print(math_ops(20,5,"$"))
+print(math_ops(20,5,"*"))
+
+print("=" * 50)
+
+# Local Scope 
+def add():
+    la = 10 # local variable declared "inside the function" 
+    lb = 20 # local variable declared "inside the function" 
+    print(la)
+    print(lb)
+    
+add()    
+
+print("=" * 50)
+ 
+# print(la) # NameError: name 'la' is not defined. Did you mean: 'a'?
+
+def add(la,lb): # local variable la and lb 
+    print(la)
+    print(lb)
+    
+add(30,40) 
+
+# print(la) # NameError: name 'la' is not defined. Did you mean: 'a'?
+
+print("=" * 50)
+
+# Global Scope
+ga = 70
+
+def add(la,lb):
+    print(la)
+    print(lb)
+    print(ga) # accessing global inside the function
+    
+add(50,60)
+# print(la) # NameError: name 'la' is not defined. Did you mean: 'a'?
+print(ga)
+
+print("=" * 50)
+
+ga = 100 # ga is global 
+
+def add(la,lb,ga): # ga is local 
+    print(la)
+    print(lb)
+    print(ga) # 90 preference is local
+    # print(ga) # 100 want to access  
+    print(globals()['ga']) # 100 want to access  
+    
+add(70,80,90) 
+
+print("=" * 50)
+
+# global variables outside the function
+count = 0
+print(count)
+count += 1 
+print(count)
+
+print("=" * 50)
+
+
+# global variables inside the function
+count = 0
+print(count)
+
+def increment():
+    global count # UnboundLocalError: cannot access local variable 'count' where it is not associated with a value
+    count += 1   # UnboundLocalError: cannot access local variable 'count' where it is not associated with a value
+    return count
+print("=" * 50)
+
+print(increment())
+
+print("=" * 50)
+
+# Lambda Functions 
+
+# Without lambda, standard functions
+def add(a,b):
+    return a + b 
+print(add(200,300))
+
+print("=" * 50)
+
+# With lambda function
+# lambda arguments:expression
+lambda a,b:a + b 
+# IILE -> print((lambda_function)(arguments))
+print((lambda a,b:a + b)(20,30))
+print("=" * 50)
+
+# Without lambda, standard functions check the number is even or not
+def is_even_num(num):
+    if num % 2 == 0:
+        return True 
+    else:
+        return False
+    
+print(is_even_num(13))
+print("=" * 50)
+print(is_even_num(12))
+print("=" * 50)
+
+# With lambda functions check the number is even or not
+# lambda arguments:expression
+lambda num:num % 2 == 0
+# IILE -> print((lambda_function)(arguments))
+print((lambda num:num % 2 == 0)(5))
+print("=" * 50)
+print((lambda num:num % 2 == 0)(6))
+print("=" * 50)

@@ -243,3 +243,157 @@ Class - 12
         -> This parameter will then collect all the Keyword arguments 
         passed to the function into a Dictionary, 
         where names will be keys and value is value 
+
+
+Class - 13
+==========
+
+    -> return keyword 
+
+        -> In Python, the "return" keyword is used within a function 
+        to send a value back to the part of the code that called the function.
+
+            -> Task -> O/P -> I/P Another Task (Fails)
+
+            -> Task -> return O/P -> I/P Another Task (Succeed) 
+
+        -> When working with function composition (function calling another function), 
+        return will be helpful
+
+        -> NOTE: when you don't use a return, by default a function returns None 
+
+        ->  If you use return, make sure it's the last part of statement to be executed
+
+        -> If you have multiple return statements, first return will be considered
+
+        -> If multiple returns are present, and used with conditionals, 
+        you can control the flow 
+
+    
+    -> Scopes In Functions 
+
+        -> Scope: Inside the function code blocks, where you can access variable depends on Scope
+
+            -> Local Scope
+
+            -> Global Scope
+
+        
+        -> Local Scope
+
+            -> A local variable declared "inside the function" 
+            -> It's lifetime exists only within the function
+            -> We cannot use them outside the function   
+            -> NOTE: Parameters we are passing to the functions, are also local variables  
+
+        -> Global Scope
+
+            -> A Global variable declared outside the function 
+            
+            -> it's lifetime exists within the function as well as outside function 
+
+            -> As global variables can be accessed inside the functions, there can be
+            name conflicts, in this scenario the preference is given to local variables 
+
+                -> NOTE: To Access Global Variable in above scenario, use globals()
+
+            -> If you want global variables to be changed inside the function, we cannot 
+            do that directly 
+
+                -> NOTE: To change Global Variable inside function, use global keyword
+
+
+
+    -> Type Of Functions 
+
+        -> Built In Functions 
+
+        -> User Defined Functions 
+
+        -> Lambda Functions 
+
+        -> Higher Order Functions 
+
+
+    -> Built In Functions 
+
+        -> Pre Defined Functions, already part of Standard Python Library 
+
+        -> No need to create explicitly again using def keyword 
+
+        -> Just call them using function name 
+
+        -> Examples
+
+            -> print(), id(), type(), dir(), len(), input() etc 
+
+
+    -> User Defined Functions 
+
+        -> User Defined functions, are created by Developers using def keyword 
+
+        -> Created based on Customers Requirement 
+
+        -> Examples 
+
+            -> add(), emp_info(), math_ops() etc 
+
+    
+    -> Programming Paradigms
+
+        -> A programming paradigm is a style or approach to writing code and solving problems, 
+        rather than a specific programming language. 
+        Most modern languages are multi-paradigm, letting you mix styles depending on the task.
+
+        -> https://simple.wikipedia.org/wiki/Programming_paradigm
+
+        -> Problem: How To Reach Institute ? 
+
+                -> Solution 1: I'll Come By Walk 
+                -> Solution 2: I'll Come By Bike 
+                -> Solution 3: I'll Come By Car 
+
+    -> We Have Two Popular Types 
+
+        -> Imperative Approach 
+
+            -> Focus is on "HOW TO DO"
+
+            -> Object Oriented Programming
+
+        -> Declarative Approach 
+
+            -> Focus is on "WHAT TO DO"
+
+            -> Functional Oriented Programming
+
+
+        -> NOTE: Python Uses Multi Paradigm Approach i.e 
+        We Can Use Imperative & Declarative Approach
+
+        -> https://miro.medium.com/v2/resize:fit:1200/1*Jf5GJS1XtRsHWbZldcvOiQ.png
+
+
+    -> Lambda Functions 
+
+        -> A lambda function in Python is a small, anonymous function 
+        defined with the "lambda" keyword.
+
+        -> Unlike Standard Functions(block of code), Lambda functions are 
+        restricted to single line expression 
+
+        -> Unlike Standard Functions, Lambda functions automatically returned(Implicit) 
+        without using a return statement
+
+        -> Lambda Functions are often used for "short, one-time operations" where 
+        a full function definition would be unnecessarily verbose.
+
+        -> Using Lambda Functions we can write "one liner functions" called "IILE" 
+        Immediately Invoked Lambda Expression
+
+        -> Syntax
+
+            lambda arguments:expression
+
+        -> NOTE: Generally lambda functions will be "attached" with "Higher Order Functions" 
+
