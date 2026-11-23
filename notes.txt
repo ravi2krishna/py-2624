@@ -397,3 +397,64 @@ Class - 13
 
         -> NOTE: Generally lambda functions will be "attached" with "Higher Order Functions" 
 
+
+Class - 14
+==========
+
+    -> Higher Order Functions 
+
+        -> The goal of Higher Order Functions is to "perform operations on Iterables" 
+
+        -> Concise Code, without writing lengthy code with loops and conditionals
+
+            -> NOTE: Remember Imperative vs Declarative Style (How To Do vs What To Do)
+
+
+        -> map()
+
+            -> map() function applies a given function(preferably lambda function) 
+            to each item in an Iterable/Collection and returns an Iterator containing results.
+
+            -> NOTE: map() function provide a Concise way to perform "Data Transformations" 
+            on collections without writing loops / lengthy code. 
+
+            -> Syntax 
+
+                map(function,Iterable) 
+
+            -> NOTE: Just Like Using For Loop With Standard Functions 
+
+            -> NOTE: Used Widely In Data Transformations 
+
+
+
+    -> filter()
+
+        -> filter() function applies a given function(preferably lambda function)
+        to each item in an Iterable and returns an Iterator Containing Results. 
+
+        -> NOTE: filter() function provides a Concise Way To Perform 
+        "Data Extractions" Without Using Length Loops With Conditionals. 
+
+        -> It is a powerful tool for "selectively extracting data" 
+        based on a "given condition".
+
+        -> Syntax 
+
+            filter(function,Iterable)
+
+        -> NOTE: Just Like Using For Loop and Conditionals With Standard Functions  
+
+        -> NOTE: Used Widely In Data Extractions 
+
+    
+        -> map() - Data Transformations
+
+        -> filter() - Data Extractions 
+
+    
+
+    -> Implement CRUD App using Functional Style (11_crud_app)
+
+        -> Additionally Implement "Search Students By Skill" - 
+        Use Lambda & Higher Order Functions 
